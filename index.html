@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my fitness</title>
+  </head>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    * {
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    body {
+      color: aliceblue;
+      margin: 0px;
+      padding: 0px;
+      background: url(" img/bg.jpg.jpg");
+      background-position: 314px 2px;
+    }
+    .left {
+      display: inline-block;
+      position: absolute;
+      left: 60px;
+      top: 20px;
+      /*border: 2px solid  rgb(210, 7, 17);*/
+    }
+    .left img {
+      padding: 20px 20px;
+      width: 90px;
+      filter: invert(
+        100%
+      ); /*invert function ko use karke hum koi bhi image ka color change kr skte h */
+    }
+    .left div {
+      text-align: center;
+      line-height: 0px;
+      font-size: 13px;
+   
+    }
+    .mid {
+      padding: 20px 20px ;
+      display: block;
+      width: 70%  ;    
+      margin: 10px auto;
+     /* border: 2px solid lightgoldenrodyellow;*/
+    }
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 20px;
+      display: inline-block;
+      /*border :2px solid lightskyblue*/
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      font-size: 25px;
+      display: inline-block;
+    }
+    .navbar li a {
+      color: aliceblue;
+      text-decoration: none;
+      padding: 34px 23px;
+    }
+    .navbar li a:hover,
+    navbar li a.active {
+      text-decoration: underline;
+      color: rgb(165, 163, 163);
+    }
+    .btn {
+      margin: 13px 9px;
+      color: aliceblue;
+      background-color: black;
+      padding: 3px 4px;
+      border: 2px solid gray;
+      border-radius: 12px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgb(31, 29, 29);
+    }
+    .container {
+      margin: 106px 80px;
+      padding: 75px;
+      width: 33%;
+      border-radius: 28px;
+      /*border: 2px solid greenyellow;*/
+    }
+    .form-group input{
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+      text-align: center; 
+      display: block;
+      margin: 11px auto;
+      width: 451px;
+      padding: 6px;
+      border: 2px solid black;
+      font-size: 20px ;
+      border-radius: 12px;
+
+
+    }
+    .container h1 {
+      text-align: center;
+    }
+    .container button{
+      display: block;
+      margin: 27px auto;
+      width:  45%;
+    }
+  </style>
+
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="img/gym.bpg.png" alt="" />
+        <div style="font-size: 30px;">My fitness</div>
+      </div>
+      <!-- mid box for navbar  -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Fitness calculator</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div> 
+      <!-- rgiht box for buttons  -->
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>join the best Gym of delhi now </h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" placeholder="enter your NAME ">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="enter your AGE ">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="enter your GENDER">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="enter your LOCALITY">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="enter your EMAIL">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="enter your CONTACT NUMBER">
+        </div>
+        <button class="btn">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+C:\Users\HP\Desktop\project1\css
